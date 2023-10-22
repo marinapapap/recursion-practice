@@ -1,9 +1,9 @@
 const arraySum = (array) => {
-  if (array.length === 1) {
-    return array[0];
-  } else {
-    return array[0] + array[1];
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    count += array[i];
   }
+  return count;
 };
 
 module.exports = arraySum;
