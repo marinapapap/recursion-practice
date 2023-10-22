@@ -10,4 +10,9 @@ describe("ArraySum", () => {
     const array = [1, 1];
     expect(arraySum(array)).toBe(2);
   });
+
+  it("returns the sum of an array with length greater than 2", () => {
+    const array = [1, 1, 4, 5];
+    expect(arraySum(array)).toBe(11);
+  });
 });
