@@ -1,6 +1,6 @@
 const arraySum = require("./arraySum");
 
-describe("ArraySum", () => {
+describe("arraySum", () => {
   it("returns the sum of an array with length of 1", () => {
     const array = [1];
     expect(arraySum(array)).toBe(1);
