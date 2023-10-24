@@ -16,4 +16,12 @@ describe("countdown", () => {
     const result = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
     expect(countdown(startingValue)).toEqual(result);
   });
+
+  describe("invalid input", () => {
+    it("throws an error if that input value is less than 0", () => {
+      expect(() => {
+        countdown(-3);
+      }).toThrow("Input must be greater than or equal to 0");
+    });
+  });
 });
