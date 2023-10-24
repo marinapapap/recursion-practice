@@ -1,9 +1,7 @@
-const countdown = (startingValue) => {
-  let countdown = [];
-  for (let i = startingValue; i >= 0; i--) {
-    countdown.push(i);
+const countdown = (num) => {
+  if (num === 0) {
+    return [0];
   }
-  return countdown;
 };
 
 module.exports = countdown;
