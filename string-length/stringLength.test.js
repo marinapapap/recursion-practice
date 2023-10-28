@@ -7,7 +7,7 @@ describe("stringLength", () => {
   });
 
   it("returns 1 when given an 'q", () => {
-    const string = "";
-    expect(stringLength(string)).toEqual(0);
+    const string = "1";
+    expect(stringLength(string)).toEqual(1);
   });
 });
