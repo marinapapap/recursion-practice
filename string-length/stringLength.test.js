@@ -15,4 +15,20 @@ describe("stringLength", () => {
     const string = "1111";
     expect(stringLength(string)).toEqual(4);
   });
+
+  describe("invalid input", () => {
+    it("throws an error if the input is a boolean value", () => {
+      expect(() => {
+        const invalid = true;
+        stringLength(invalid);
+      }).toThrow("Input must be a string");
+    });
+
+    it("throws an error if the input is an integer", () => {
+      expect(() => {
+        const invalid = 123;
+        stringLength(invalid);
+      }).toThrow("Input must be a string");
+    });
+  });
 });

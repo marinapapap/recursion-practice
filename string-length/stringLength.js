@@ -1,9 +1,9 @@
-const stringLength = (string, count = 0) => {
+const stringLength = (string, index = 0) => {
   const array = string.split("");
-  if (!array[count]) {
+  if (!array[index]) {
     return 0;
   } else {
-    return 1 + stringLength(string, count + 1);
+    return 1 + stringLength(string, index + 1);
   }
 };
 
