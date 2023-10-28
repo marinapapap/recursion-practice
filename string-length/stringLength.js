@@ -1,12 +1,9 @@
-const stringLength = (string) => {
-  if (!string) {
+const stringLength = (string, count = 0) => {
+  const array = string.split("");
+  if (!array[count]) {
     return 0;
   } else {
-    let count = 0;
-    string.split("").forEach(() => {
-      count += 1;
-    });
-    return count;
+    return 1 + stringLength(string, count + 1);
   }
 };
 
