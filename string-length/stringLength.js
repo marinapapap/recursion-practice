@@ -1,4 +1,7 @@
 const stringLength = (string, index = 0) => {
+  if (typeof string !== "string") {
+    throw new Error("Input must be a string");
+  }
   const array = string.split("");
   if (!array[index]) {
     return 0;
