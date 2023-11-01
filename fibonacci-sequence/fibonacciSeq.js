@@ -1,5 +1,3 @@
-const fibonacciSeq = (n) => {
-  return n;
-};
+const fibonacciSeq = (n) => {};
 
 module.exports = fibonacciSeq;
