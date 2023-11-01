@@ -18,7 +18,7 @@ describe("countdown", () => {
   });
 
   describe("invalid input", () => {
-    it("throws an error if that input value is less than 0", () => {
+    it("throws an error if the input value is less than 0", () => {
       expect(() => {
         countdown(-3);
       }).toThrow("Input must be greater than or equal to 0");
