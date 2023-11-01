@@ -15,4 +15,9 @@ describe("sumOfNaturalNums", () => {
     const n = 2;
     expect(sumOfNaturalNums(n)).toBe(3);
   });
+
+  it("returns 5050 when given 100", () => {
+    const n = 100;
+    expect(sumOfNaturalNums(n)).toBe(5050);
+  });
 });
