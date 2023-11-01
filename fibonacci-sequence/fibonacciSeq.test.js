@@ -16,8 +16,8 @@ describe("fibonacciSeq", () => {
     expect(fibonacciSeq(n)).toBe(1);
   });
 
-  it("returns 3 when given 3", () => {
-    const n = 2;
+  it("returns 2 when given 3", () => {
+    const n = 3;
     expect(fibonacciSeq(n)).toBe(2);
   });
 });
